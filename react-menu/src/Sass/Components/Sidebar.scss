@@ -1,8 +1,41 @@
 .sidebar {
-    padding: 1rem;
-    background-color: black;
+    position: relative;
 
-    .sidebar__icon {
+    .sidebar__top-section {
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         color: white;
+        background-color: red;
+    }
+
+    .sidebar__side-section {
+        position: absolute;
+        width: fit-content;
+        height: 100vh;
+        background-color: $white;
+        z-index: 10;
+        top: 0;
+
+        .sidebar__side-header {
+            padding: 1rem 1rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sidebar__link {
+            display: flex;
+            padding: 1rem 2.5rem;
+            color: white;
+
+            .link__icon {
+                padding-right: 1rem;
+            }
+
+            .link__text {
+
+            }
+        }
     }
 }

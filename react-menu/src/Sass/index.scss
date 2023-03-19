@@ -1,9 +1,18 @@
-@use './Components/Header.scss';
-@use './Components/Sidebar.scss';
+@import './Components/Sidebar.scss';
+
+// Colors
+$black: #212121;
+$white: #fafafa;
+$whiteDark: #eeeeee;
+$grey: #757575;
 
 *  
     { 
     margin: 0; 
     padding: 0; 
     border: 0; 
+}
+
+.container {
+    max-width: 100vw;
 }
