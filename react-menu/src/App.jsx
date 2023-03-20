@@ -6,6 +6,7 @@ import Ubicacion from './Pages/Ubicacion'
 import Domicilios from './Pages/Domicilios'
 import Informacion from './Pages/Informacion'
 import Contacto from './Pages/Contacto'
+import ProductMenu from './Components/ProductMenu'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,9 @@ function App() {
           <Route path='/domicilios' element={<Domicilios/>}/>
           <Route path='/informacion' element={<Informacion/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/desayunos' element={<ProductMenu name='Desayunos'/>}/>
+          <Route path='/almuerzos' element={<ProductMenu name='Almuerzos'/>}/>
+          <Route path='/bebidas' element={<ProductMenu name='Bebidas'/>}/>
         </Routes>
       </Sidebar>
     </BrowserRouter>

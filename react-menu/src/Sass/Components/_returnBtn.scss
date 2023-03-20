@@ -1,0 +1,12 @@
+@import '../variables';
+
+.returnBtn {
+    display: flex;
+    align-items: center;
+    color: $color-black;
+
+    p {
+        margin-left: 0.6rem;
+        font-weight: 600;
+    }
+}

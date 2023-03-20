@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import { FaBars, FaChevronLeft, FaMapMarkedAlt, FaShoppingCart, FaInfoCircle, FaPhoneAlt, FaShoppingBag } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({children}) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen (!isOpen)
   const menuItem = [
@@ -35,11 +35,11 @@ const Sidebar = () => {
   ]
   
   return (
-    <div className='container'>
+    <div className='sidebar-container'>
       <div className='sidebar'>
         <div className='sidebar__top-section'>
           <FaBars onClick={toggle}/>
-          <p>Menu</p>
+          <p>Santo Comer</p>
         </div>
         <div style={{ width: isOpen ? "220px" : "0px" }} className='sidebar__side-section'>
           <div className='sidebar__side-header'>
@@ -55,6 +55,7 @@ const Sidebar = () => {
           }
         </div>
       </div>
+      <main>{children}</main>
     </div>
   )
 }
