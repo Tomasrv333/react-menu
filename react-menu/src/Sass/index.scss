@@ -1,7 +1,7 @@
 @use './Components/sidebar.scss';
-@use './Components/cardMenu';
+@use './Components/menu/cardMenu';
 @use './Components/returnBtn';
-@use './Components/productItem';
+@use './Components/menu/productItem';
 @import './variables';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -19,4 +19,8 @@ body {
 .container {
     max-width: 100vw;
     padding: 0 4rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
 }

@@ -5,7 +5,7 @@ import CardMenu from '../Components/CardMenu'
 const Menu = () => {
   return (
     <div className='container'>
-      <h2>Carta del Restaurante</h2>
+      <h2>Menu</h2>
       <NavLink to='/desayunos'>
         <CardMenu name='Desayunos'/>
       </NavLink>
