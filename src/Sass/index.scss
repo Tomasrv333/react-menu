@@ -1,12 +1,12 @@
-@use './Components/sidebar.scss';
-@use './Components/footer';
+@import './Components/sidebar.scss';
+@import './Components/footer';
 @import './Components/menu/cardMenu';
-@use './Components/returnBtn';
-@use './Components/Informacion/mainInformacion';
-@use './Components/Contacto/mainContacto';
-@use './Components/Ubicacion/mainUbicacion';
-@use './Components/menu/productItem';
-@use './Components/Domicilios/mainDomicilios';
+@import './Components/returnBtn';
+@import './Components/Informacion/mainInformacion';
+@import './Components/Contacto/mainContacto';
+@import './Components/Ubicacion/mainUbicacion';
+@import './Components/menu/productItem';
+@import './Components/Domicilios/mainDomicilios';
 @import './variables';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
