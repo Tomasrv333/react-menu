@@ -1,6 +1,6 @@
 @use './Components/sidebar.scss';
 @use './Components/footer';
-@use './Components/menu/cardMenu';
+@import './Components/menu/cardMenu';
 @use './Components/returnBtn';
 @use './Components/Informacion/mainInformacion';
 @use './Components/Contacto/mainContacto';
