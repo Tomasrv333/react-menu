@@ -1,7 +1,7 @@
 import React from 'react'
-import bgDesayuno from '../Assets/bg-des.jpg'
-import bgAlmuerzo from '../Assets/bg-alm.jpg'
-import bgBebidas from '../Assets/bg-beb.jpg'
+import bgDesayuno from '../../Assets/bg-des.jpg'
+import bgAlmuerzo from '../..//Assets/bg-alm.jpg'
+import bgBebidas from '../../Assets/bg-beb.jpg'
 
 const CardMenu = (props) => {
   return (

@@ -6,7 +6,7 @@ import Ubicacion from './Pages/Ubicacion'
 import Domicilios from './Pages/Domicilios'
 import Informacion from './Pages/Informacion'
 import Contacto from './Pages/Contacto'
-import ProductMenu from './Components/ProductMenu'
+import ProductMenu from './Components/menu/ProductMenu'
 
 function App() {
   const [count, setCount] = useState(0)

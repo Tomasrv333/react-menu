@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.contacto__info {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: $color-whiteDark;
+
+    .info__title {
+        display: flex;
+        align-items: center;
+
+        .title {
+            margin: 0;
+            margin-right: 0.6rem;
+        }
+    }
+}
+
+.contacto__icons {
+    
+    .icons__item {
+        display: flex;
+
+        .item__content {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            background-color: $color-whiteDark;
+            margin-right: 0.6rem;
+        }
+    }
+}

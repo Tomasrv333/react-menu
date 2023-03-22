@@ -1,7 +1,12 @@
 @use './Components/sidebar.scss';
+@use './Components/footer';
 @use './Components/menu/cardMenu';
 @use './Components/returnBtn';
+@use './Components/Informacion/mainInformacion';
+@use './Components/Contacto/mainContacto';
+@use './Components/Ubicacion/mainUbicacion';
 @use './Components/menu/productItem';
+@use './Components/Domicilios/mainDomicilios';
 @import './variables';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -18,9 +23,27 @@ body {
 
 .container {
     max-width: 100vw;
-    padding: 0 4rem;
+    padding: 1rem 3.2rem;
 
     h2 {
         margin-bottom: 1rem;
     }
+
+    h3 {
+        margin-bottom: 0.6rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+}
+
+.button--outline {
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    color: $color-white;
+    background-color: $color-black;
+    border: 1px solid $color-black;
 }

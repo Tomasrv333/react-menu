@@ -1,0 +1,9 @@
+@import '../../variables';
+
+.ubicacion__map {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    border: 1px solid $color-black;
+    background-color: $color-black;
+}

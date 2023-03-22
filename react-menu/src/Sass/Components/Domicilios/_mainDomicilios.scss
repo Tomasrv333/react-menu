@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.info__content {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-color: $color-whiteDark;
+}
+
+.price__content {
+    display: flex;
+    border-radius: 0.3rem;
+    justify-content: center;
+    background-color: $color-whiteDark;
+
+    :first-child {
+        border-right: 1px solid $color-black;
+    }
+}
+
+.price__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 1rem;
+
+    .item__text {
+        margin: 0;
+        margin-bottom: 0.2rem;
+        border: none;
+    }
+
+    span {
+        width: fit-content;
+        padding: 0.1rem 0.4rem;
+        border-radius: 0.2rem;
+        color: $color-white;
+        background-color: $color-black;
+    }
+}

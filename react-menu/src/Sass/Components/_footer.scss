@@ -1,0 +1,27 @@
+@import '../variables';
+
+footer {
+    margin-top: 2rem;
+    height: fit-content;
+    color: $color-white;
+    background-color: $color-black;
+
+    .footer__content {
+        padding: 3rem 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-size: 12px;
+        }
+
+        .content__icons {
+            display: flex;
+
+            .icon__item {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

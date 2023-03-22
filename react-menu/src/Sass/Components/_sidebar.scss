@@ -11,6 +11,26 @@
         color: white;
         background-color: $color-black;
         margin-bottom: 2rem;
+
+        .top-section__title {
+            display: flex;
+            align-items: center;
+            
+            p {
+                margin-left: 1rem;
+            }
+        }
+
+        .top-section__icons {
+            display: flex;
+            width: fit-content;
+
+            .icon__btn {
+                display: flex;
+                align-items: center;
+                margin-left: 0.4rem;
+            }
+        }
     }
 
     .sidebar__side-section {
@@ -24,7 +44,7 @@
         transition: .5s;
 
         .sidebar__side-header {
-            padding: 1rem 1rem;
+            padding: 1.3rem 1rem;
             display: flex;
             justify-content: flex-end;
         }

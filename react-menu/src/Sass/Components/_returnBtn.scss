@@ -5,7 +5,8 @@
     align-items: center;
     color: $color-black;
 
-    p {
+    .returnBtn__text {
+        margin-bottom: 0;
         margin-left: 0.6rem;
         font-weight: 600;
     }

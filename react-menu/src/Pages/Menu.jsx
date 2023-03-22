@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import CardMenu from '../Components/CardMenu'
+import CardMenu from '../Components/Menu/CardMenu'
 
 const Menu = () => {
   return (

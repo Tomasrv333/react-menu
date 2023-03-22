@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
-import { FaBars, FaChevronLeft, FaMapMarkedAlt, FaShoppingCart, FaInfoCircle, FaPhoneAlt, FaShoppingBag } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaBars, FaChevronLeft, FaMapMarkedAlt, FaShoppingCart, FaInfoCircle, FaPhoneAlt, FaShoppingBag } from "react-icons/fa";
+import Footer from './Footer';
 
 const Sidebar = ({children}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +39,18 @@ const Sidebar = ({children}) => {
     <div className='sidebar-container'>
       <div className='sidebar'>
         <div className='sidebar__top-section'>
-          <FaBars onClick={toggle}/>
-          <p>Santo Comer</p>
+          <div className='top-section__title'>
+            <FaBars onClick={toggle}/>
+            <p>Santo Comer</p>
+          </div>
+          <div className='top-section__icons'>
+            <div className='icon__btn'>
+              <FaFacebookSquare/>
+            </div>
+            <div className='icon__btn'>
+              <FaInstagramSquare/>
+            </div>
+          </div>
         </div>
         <div style={{ width: isOpen ? "220px" : "0px" }} className='sidebar__side-section'>
           <div className='sidebar__side-header'>
@@ -47,7 +58,7 @@ const Sidebar = ({children}) => {
           </div>
           {
             menuItem.map((item, index) => (
-              <NavLink to={item.path} key={index} className='sidebar__link'>
+              <NavLink to={item.path} key={index} className='sidebar__link' onClick={toggle}>
                 <div className='link__icon'>{item.icon}</div>
                 <div className='link__text'>{item.name}</div>
               </NavLink>
@@ -55,7 +66,10 @@ const Sidebar = ({children}) => {
           }
         </div>
       </div>
-      <main>{children}</main>
+      <main>
+          {children}
+          <Footer/>
+      </main>
     </div>
   )
 }
